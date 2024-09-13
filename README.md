@@ -14,6 +14,16 @@
 ### 🚀 Установка проекта
 1. Установите [Python](https://www.python.org/downloads/)
 2. Установите [Node.js](https://nodejs.org/en)
-3. Установите библиотеки для Python командой:
+2. Установить [React+Vite](https://vitejs.dev/guide/)
+4. Установите библиотеки для Python командой:
    ```bash
-   python3 -m pip install -r requirements.txt
+   python3 -m pip install -r requirements.txt```
+
+### 💻 Команды запуска
+* Запуск back end:
+    ```bash
+        python3 main.py```
+
+* Запуск front end:
+    ```bash
+        npm run dev```
