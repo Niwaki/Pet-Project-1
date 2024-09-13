@@ -22,8 +22,8 @@
 ### 💻 Команды запуска
 * Запуск back end:
     ```bash
-        python3 main.py```
+        python3 main.py
 
 * Запуск front end:
     ```bash
-        npm run dev```
+        npm run dev
