@@ -17,7 +17,7 @@
 2. Установить [React+Vite](https://vitejs.dev/guide/)
 4. Установите библиотеки для Python командой:
    ```bash
-   python3 -m pip install -r requirements.txt```
+   python3 -m pip install -r requirements.txt
 
 ### 💻 Команды запуска
 * Запуск back end:
