@@ -10,18 +10,18 @@ export default function SideNav() {
     return (
         <nav className="flex fixed top-0 flex-col text-white w-36 h-screen">
             <div className="flex w-35 h-18 bg-darkgreen justify-center items-center h-16 border-white">
-                <a className='no-underline' href="#" onClick={authopage}>ВЫХОД/ВХОД</a>
+                <a className='no-underline hover:animate-pulse' href="#" onClick={authopage}>ВЫХОД/ВХОД</a>
             </div>
             <div className="flex bg-darkgreen justify-center h-screen items-center">
                 <ul className="flex flex-col gap-20 items-center">
-                    <li>
-                        <a className="no-underline" href="/about">PIDAR</a>
+                    <li className="hover:animate-pulse">
+                        <a className="no-underline hover:animate-pulse'" href="/about">PIDAR</a>
                     </li>
-                    <li>
-                        <a className="no-underline" href="/about">SUKA</a>
+                    <li className="hover:animate-pulse">
+                        <a className="no-underline hover:animate-pulse'" href="/about">SUKA</a>
                     </li>
-                    <li>
-                        <a className="no-underline" href="/about">GOOD PENIS</a>
+                    <li className="hover:animate-pulse">
+                        <a className="no-underline hover:animate-pulse'" href="/about">GOOD PENIS</a>
                     </li>
                 </ul>
             </div>

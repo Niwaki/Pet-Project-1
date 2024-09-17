@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react';
 
 export default function BlockSteam() {
     const [game, setGame] = useState(null);
+    const [shownavbar, setShownavbar] = useState(false);
+    const [theme, setTheme] = useState('dark');
   
     const game_play = () => {
       axios.get('http://127.0.0.1:8000/game')
@@ -38,36 +40,33 @@ export default function BlockSteam() {
         gamenow = game[0].in_game;
       }
     }
-
     function Switch() {
-      return console.log("switch")
+      setShownavbar(!shownavbar);
+    }
+
+    function ChangeTheme() {
+      return console.log(theme);
     }
 
     return (
+        <>
+          <div className='flex flex-wrap justify-between items-center content-between px-[10px] gap-[127px] m-auto h-[15px]' style={colorprofile}>
+              <a onClick={ChangeTheme}><img className='w-[16px] h-[9px]'src='./img/sidenav/switch.png'/></a>
+              
+              <img className="rounded-full w-[15px] h-[15] ring-[0.5px] ring-darkgreen" src="https://avatars.steamstatic.com/30854a44504e7c7a0a8f3d36954c94346ee084fc_full.jpg"/>
 
-      <header className="flex justify-center text-white sticky top-0 ml-36" style={colorprofile}>
-        <div className='flex'>
-            <ul className='flex gap-20 items-center'>
-                <li className='flex items-center gap-7'><img src='./img/blocksteam/switch_nav.png'/></li>
-                <li className='flex items-center gap-7'><img src="./img/blocksteam/name.png"/><a>Искупался в родничке</a></li>
-                <li className='flex items-center gap-7'><img src="./img/blocksteam/game.png"/><a>{gamenow}</a></li>
-                <li className='flex items-center gap-7'><img className="rounded-full w-16 h-16" src="https://avatars.steamstatic.com/30854a44504e7c7a0a8f3d36954c94346ee084fc_full.jpg"/></li>
-                <li className='flex items-center gap-7'><img src="./img/blocksteam/lang.png"/><a>Любимый язык</a></li>
-                <li className='flex items-center gap-7'> <img src="./img/blocksteam/favortielang.png"/><a>На чем в прошлый раз кодил</a></li>
-            </ul>
+              <a onClick={Switch}><img className='w-[9px] h-[9px] hover:animate-spin 'src='./img/blocksteam/switch_nav.png'/></a>
         </div>
-      </header>
+
+        <div className={shownavbar ? 'block ' : 'hidden'}>
+          <div className='flex flex-col flex-wrap justify-between items-center content-center px-2 py-[3px] gap-[6px] m-auto bg-darkgreen text-[7px] text-white'>
+                <a className='hover:animate-pulse' href='#'>ГЛАВНАЯ</a>
+                <a className='hover:animate-pulse' href='#'>РАБОТА</a>
+                <a className='hover:animate-pulse' href='#'>О МНЕ</a>
+                <a className='hover:animate-pulse' href='#'>ТВОРЧЕСТВО</a>
+          </div>
+        </div>
+       </>
     )
 }
 
-{/* <header className="hiden sm:flex justify-center text-white sticky top-0 ml-36 sm:w-screen sm:ml-0 sm:h-8" style={colorprofile}>
-<div className='flex sm:font-thin'>
-    <ul className='flex gap-20 items-center sm:text-xs sm:flex-wrap sm:gap-12'>
-        <li className='flex items-center gap-7'><img src='./img/blocksteam/switch_nav.png'/></li>
-        <li className='flex items-center gap-7 sm:collapse'><img src="./img/blocksteam/name.png"/><a>Искупался в родничке</a></li>
-        <li className='flex items-center gap-7'><img src="./img/blocksteam/game.png"/><a>{gamenow}</a></li>
-        <li className='flex items-center gap-7'><img className="rounded-full w-16 h-16 sm:w-8 sm:h-8" src="https://avatars.steamstatic.com/30854a44504e7c7a0a8f3d36954c94346ee084fc_full.jpg"/></li>
-        <li className='flex items-center gap-7 sm:collapse'><img src="./img/blocksteam/lang.png"/><a>Любимый язык</a></li>
-        <li className='flex items-center gap-7 sm:collapse'> <img src="./img/blocksteam/favortielang.png"/><a>На чем в прошлый раз кодил</a></li>
-    </ul>
-</div> */}

@@ -40,11 +40,9 @@ export default function Footer() {
     }
     return (
       <>
-        <footer className="flex fixed bottom-0 justify-center text-white h-16 items-center ml-36 w-screen" style={colorprofile}>
-          <div className="flex">
-            <p>Сайт сделан как что-то творечское, можно сказать как визитка ничего серьезного</p>
-          </div>
-        </footer>
+        <div className='flex flex-row flex-wrap justify-center items-center content-center px-[0px] gap-x-[0px] gap-y-[127px] h-[15px] text-white text-[7px]' style={colorprofile}>
+          Сайт сделан как что-то творечское, можно сказать как визитка ничего серьезного
+        </div>
       </>
     )
 }

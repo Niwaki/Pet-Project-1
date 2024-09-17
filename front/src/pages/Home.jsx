@@ -5,67 +5,13 @@ import Footer from "../components/Footer"
 export default function Home() {
     return (
         <>
-        {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
 
         <BlockSteam/>
-        <SideNav/>
+        {/* <SideNav/> */}
 
-        <main className="flex justify-center items-center bg-darkgreen h-screen ml-36">
-            <div className="flex justify-center items-center flex-wrap ml-36">
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-                <h1 style="color: black">Главная</h1>
-            </div>
-        </main>
+        <div className="flex justify-center items-center content-center flex-wrap bg-darkgreen text-white text-[7px] h-screen">
+            Главная
+        </div>
 
         <Footer/>
         </>
