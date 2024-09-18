@@ -50,16 +50,22 @@ export default function BlockSteam() {
 
     return (
         <>
-          <div className='flex flex-wrap justify-between items-center content-between px-[10px] gap-[127px] m-auto h-[15px]' style={colorprofile}>
-              <a onClick={ChangeTheme}><img className='w-[16px] h-[9px]'src='./img/sidenav/switch.png'/></a>
-              
-              <img className="rounded-full w-[15px] h-[15] ring-[0.5px] ring-darkgreen" src="https://avatars.steamstatic.com/30854a44504e7c7a0a8f3d36954c94346ee084fc_full.jpg"/>
-
-              <a onClick={Switch}><img className='w-[9px] h-[9px] hover:animate-spin 'src='./img/blocksteam/switch_nav.png'/></a>
+          <div className='sticky top-0 flex justify-between items-center content-between px-[10px] gap-[127px] m-auto h-[15px] desktop:pl-[140px] desktop:h-[74px] desktop:content-center desktop:items-center desktop:justify-center desktop:gap-[101px] text-white' style={colorprofile}>
+              <a onClick={ChangeTheme} className='desktop:hidden'><img className='w-[16px] h-[9px]'src='./img/sidenav/switch.png'/></a>
+              <img className='phone:hidden' src='./img/blocksteam/name.png'></img>
+              <p className='phone:hidden'>Имя</p>
+              <img className='phone:hidden' src='./img/blocksteam/game.png'></img>
+              <p className='phone:hidden'>{gamenow}</p>
+              <img className="rounded-full w-[15px] h-[15] ring-[0.5px] desktop:w-[64px] desktop:h-[64px] ring-darkgreen" src="https://avatars.steamstatic.com/30854a44504e7c7a0a8f3d36954c94346ee084fc_full.jpg"/>
+              <img className='phone:hidden' src='./img/blocksteam/lang.png'></img>
+              <p className='phone:hidden '>Любимый язык</p>
+              <img className='phone:hidden' src='./img/blocksteam/favortielang.png'></img>
+              <p className='phone:hidden'>Кодил в последнее время</p>
+              <a onClick={Switch} className='desktop:hidden'><img className='w-[9px] h-[9px] hover:animate-spin 'src='./img/blocksteam/switch_nav.png'/></a>
         </div>
 
         <div className={shownavbar ? 'block ' : 'hidden'}>
-          <div className='flex flex-col flex-wrap justify-between items-center content-center px-2 py-[3px] gap-[6px] m-auto bg-darkgreen text-[7px] text-white'>
+          <div className='desktop:hidden flex flex-col flex-wrap justify-between items-center content-center px-2 py-[3px] gap-[6px] m-auto bg-darkgreen text-[7px] text-white'>
                 <a className='hover:animate-pulse' href='#'>ГЛАВНАЯ</a>
                 <a className='hover:animate-pulse' href='#'>РАБОТА</a>
                 <a className='hover:animate-pulse' href='#'>О МНЕ</a>
@@ -69,4 +75,3 @@ export default function BlockSteam() {
        </>
     )
 }
-

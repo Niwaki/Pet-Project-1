@@ -8,26 +8,19 @@ export default function SideNav() {
         return console.log("Theme changed");
     }
     return (
-        <nav className="flex fixed top-0 flex-col text-white w-36 h-screen">
-            <div className="flex w-35 h-18 bg-darkgreen justify-center items-center h-16 border-white">
-                <a className='no-underline hover:animate-pulse' href="#" onClick={authopage}>ВЫХОД/ВХОД</a>
+        <div className="phone:hidden fixed top-0">
+            <div className="flex flex-col content-center items-center justify-center w-[140px] h-[74px] bg-darkgreen text-white">
+                <a href="#">ВЫХОД/ВХОД</a>
             </div>
-            <div className="flex bg-darkgreen justify-center h-screen items-center">
-                <ul className="flex flex-col gap-20 items-center">
-                    <li className="hover:animate-pulse">
-                        <a className="no-underline hover:animate-pulse'" href="/about">PIDAR</a>
-                    </li>
-                    <li className="hover:animate-pulse">
-                        <a className="no-underline hover:animate-pulse'" href="/about">SUKA</a>
-                    </li>
-                    <li className="hover:animate-pulse">
-                        <a className="no-underline hover:animate-pulse'" href="/about">GOOD PENIS</a>
-                    </li>
-                </ul>
+            <div className="flex flex-col justify-center items-center content-center px-[10px] gap-[241px] bg-darkgreen w-[140px] text-white">
+                <a href="#">РАБОТА</a>
+                <a href="#">РАБОТА</a>
+                <a href="#">РАБОТА</a>
             </div>
-            <div className="flex bg-darkgreen justify-center items-center">
-                <img src="./img/sidenav/switch.png"><input onClick={swtch}></input></img>
+            <div className="flex flex-col justify-center items-center content-center px-[10px] gap-[10px] bg-darkgreen w-[140px] h-[76] text-white">
+                <a><img src='./img/sidenav/switch.png'></img></a>
             </div>
-        </nav>
+        </div>
     )
 }
+
