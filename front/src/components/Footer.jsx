@@ -40,9 +40,9 @@ export default function Footer() {
     }
     return (
       <>
-        <div className='flex justify-center items-center content-center px-[0px] gap-x-[0px] gap-y-[127px] h-[15px] text-white text-[7px] desktop:pl-[140px] desktop:h-[74px] desktop:text-[15px]' style={colorprofile}>
-          Сайт сделан как что-то творечское, можно сказать как визитка ничего серьезного
-        </div>
+          <div className='flex justify-center items-center content-center px-[0px] gap-x-[0px] gap-y-[127px] h-[15px] text-white text-[7px] desktop:pl-[140px] desktop:h-[74px] desktop:text-[15px]' style={colorprofile}>
+            Сайт сделан как что-то творечское, можно сказать как визитка ничего серьезного
+          </div>
       </>
     )
 }
