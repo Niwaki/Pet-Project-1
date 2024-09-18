@@ -51,7 +51,10 @@ export default function BlockSteam() {
     return (
         <>
           <div className='sticky top-0 flex justify-between items-center content-between px-[10px] gap-[127px] m-auto h-[15px] desktop:pl-[140px] desktop:h-[74px] desktop:content-center desktop:items-center desktop:justify-center desktop:gap-[101px] text-white' style={colorprofile}>
-              <a onClick={ChangeTheme} className='desktop:hidden'><img className='w-[16px] h-[9px]'src='./img/sidenav/switch.png'/></a>
+              <a onClick={ChangeTheme} className='desktop:hidden'><img className='w-[12px] h-[12px]'src='./img/sidenav/switch.png'/></a>
+
+              <a onClick={Switch} className='phone:hidden'><img className='hover:animate-spin 'src='./img/blocksteam/switch_nav.png'/></a>
+
               <img className='phone:hidden' src='./img/blocksteam/name.png'></img>
               <p className='phone:hidden'>Имя</p>
               <img className='phone:hidden' src='./img/blocksteam/game.png'></img>
