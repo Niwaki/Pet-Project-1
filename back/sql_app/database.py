@@ -11,3 +11,19 @@ engine = create_engine(
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 Base = declarative_base()
+
+
+
+''' 3 end points to do for front web 
+CREATE TABLE IF NOT EXIST news (
+    title STRING,
+    text STRING,
+    date STRING,
+    url STRING,
+    image STRING
+);
+
+INSERT INTO news(title, text, date, url, iamge) VALUEES(table);
+
+SELECT * FROM news;
+'''

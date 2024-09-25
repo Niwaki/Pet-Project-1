@@ -1,8 +1,5 @@
 from env_variables import API_KEY
-
 from aiohttp import ClientSession
-import asyncio
-
 
 class WORK_API_STEAM_USER:
     def __init__(self, steamid):

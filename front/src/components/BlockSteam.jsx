@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import SideNav from './SideNav';
 
 export default function BlockSteam() {
     const [game, setGame] = useState(null);
@@ -54,6 +55,7 @@ export default function BlockSteam() {
               <a onClick={ChangeTheme} className='desktop:hidden'><img className='w-[12px] h-[12px]'src='./img/sidenav/switch.png'/></a>
 
               <a onClick={Switch} className='phone:hidden'><img className='hover:animate-spin 'src='./img/blocksteam/switch_nav.png'/></a>
+              {/* <SideNav shownavbarfornav={shownavbar} /> */}
 
               <img className='phone:hidden' src='./img/blocksteam/name.png'></img>
               <p className='phone:hidden'>Имя</p>
